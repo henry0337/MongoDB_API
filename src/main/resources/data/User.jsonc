@@ -1,0 +1,28 @@
+[
+  // Default administrator credentials
+  {
+    "_id": {
+      "$oid": "65f968194538fe24afd543e3"
+    },
+    "username": "root",
+    "password": "$2a$10$POSfpoLeAI1i8ec03HFJLOZ5qzfSyTJ/ndqVt.GTxTE2sVyu5oed6",
+    "status": 1,
+    "role": "ADMIN",
+    "isAccountExpired": 0,
+    "isAccountLocked": 0,
+    "isCredentialsExpired": 0
+  },
+  // Default guest credentials
+  {
+    "_id": {
+      "$oid": "65f968194538fe24afd543e4"
+    },
+    "username": "guest",
+    "password": "$2a$10$45wggxfvTxQjEB6X6mlOZOhJYBaAmgOpzwWPV5Zx635Lc3ndB5uAm",
+    "status": 1,
+    "role": "USER",
+    "isAccountExpired": 0,
+    "isAccountLocked": 0,
+    "isCredentialsExpired": 0
+  }
+]

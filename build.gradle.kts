@@ -12,7 +12,7 @@ java {
     sourceCompatibility = JavaVersion.VERSION_17
 }
 
-// Phần mã dưới này chỉ có tác dụng trên IntelliJ IDEA-based IDE
+// Phần mã dưới đây chỉ có tác dụng cho IntelliJ IDEA
 idea {
     module {
         isDownloadJavadoc = false

@@ -1,0 +1,42 @@
+[
+  {
+    "_id": {
+      "$oid": "65f67612fc13ae3e4150fe89"
+    },
+    "categoryName": "Máy tính xách tay",
+    "description": "Laptop",
+    "status": 1
+  },
+  {
+    "_id": {
+      "$oid": "65f67612fc13ae3e4150fe90"
+    },
+    "categoryName": "Màn hình",
+    "description": "Monitor",
+    "status": 1
+  },
+  {
+    "_id": {
+      "$oid": "65f67612fc13ae3e4150fe91"
+    },
+    "categoryName": "Bàn phím",
+    "description": "Keyboard",
+    "status": 1
+  },
+  {
+    "_id": {
+      "$oid": "65f67612fc13ae3e4150fe92"
+    },
+    "categoryName": "Chuột máy tính",
+    "description": "Mouse",
+    "status": 1
+  },
+  {
+    "_id": {
+      "$oid": "65f67612fc13ae3e4150fe93"
+    },
+    "categoryName": "Ổ cứng",
+    "description": "Hard disk",
+    "status": 1
+  }
+]

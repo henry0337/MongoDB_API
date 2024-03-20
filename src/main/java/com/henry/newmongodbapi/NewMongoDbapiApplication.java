@@ -25,10 +25,12 @@ public class NewMongoDbapiApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        User adminAccount = userRepository.findByRole(ADMIN);
+        User currentAdminAccount = userRepository.findByRole(ADMIN);
+        User currentUserAccount = userRepository.findByRole(USER);
 
-        if (adminAccount == null) {
+        if (currentAdminAccount == null) {
             User admin = new User();
+
             admin.setUsername("root");
             admin.setPassword(new BCryptPasswordEncoder().encode("root"));
             admin.setStatus((short) 1);
@@ -38,6 +40,20 @@ public class NewMongoDbapiApplication implements CommandLineRunner {
             admin.setIsCredentialsExpired((short) 0);
 
             userRepository.save(admin);
+        }
+
+        if (currentUserAccount == null) {
+            User user = new User();
+
+            user.setUsername("guest");
+            user.setPassword(new BCryptPasswordEncoder().encode("guest"));
+            user.setStatus((short) 1);
+            user.setRole(USER);
+            user.setIsAccountExpired((short) 0);
+            user.setIsAccountLocked((short) 0);
+            user.setIsCredentialsExpired((short) 0);
+
+            userRepository.save(user);
         }
     }
 }

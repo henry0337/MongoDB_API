@@ -3,7 +3,6 @@ package com.henry.newmongodbapi.services;
 import com.henry.newmongodbapi.models.Product;
 import com.henry.newmongodbapi.repositories.ProductRepository;
 import lombok.RequiredArgsConstructor;
-import org.bson.types.ObjectId;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -19,7 +18,7 @@ public class ProductService {
         return productRepository.findAll();
     }
 
-    public Product getById(ObjectId id) {
+    public Product getById(String id) {
         return productRepository.findById(id).isPresent() ? productRepository.findById(id).get() : null;
     }
 
@@ -27,7 +26,7 @@ public class ProductService {
         productRepository.save(product);
     }
 
-    public void update(Product product, ObjectId id) {
+    public void update(Product product, String id) {
         Optional<Product> currentProduct = productRepository.findById(id);
         if (currentProduct.isPresent()) {
             Product otherProduct = currentProduct.get();
@@ -41,7 +40,7 @@ public class ProductService {
         }
     }
 
-    public void delete(ObjectId id) {
+    public void delete(String id) {
         productRepository.deleteById(id);
     }
 }

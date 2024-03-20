@@ -25,23 +25,26 @@ public class AuthService {
     private final AuthenticationManager manager;
     private final JwtService jwtService;
 
-    public User register(SignUpRequest request) {
+    public void register(SignUpRequest request) {
         User user = new User();
 
         user.setUsername(request.getUsername());
         user.setPassword(encoder.encode(request.getPassword()));
         user.setStatus(request.getStatus());
         user.setRole(USER);
-        user.setIsAccountExpired((short) 0);
-        user.setIsAccountLocked((short) 0);
-        user.setIsCredentialsExpired((short) 0);
+        user.setIsAccountExpired(request.getIsAccountExpired());
+        user.setIsAccountLocked((request.getIsAccountLocked()));
+        user.setIsCredentialsExpired(request.getIsCredentialsExpired());
 
-        return userRepository.save(user);
+        userRepository.save(user);
     }
 
     public AuthResponse login(SignInRequest request) {
         manager.authenticate(new UsernamePasswordAuthenticationToken(request.getUsername(), request.getPassword()));
-        User user = userRepository.findByUsername(request.getUsername()).orElseThrow(() -> new IllegalArgumentException("Invalid email or password provided!"));
+
+        User user = userRepository.findByUsername(request.getUsername()).orElseThrow(
+                () -> new IllegalArgumentException("Invalid email or password provided!")
+        );
         String jwt = jwtService.generateToken(user);
         String refreshToken = jwtService.generateRefreshToken(new HashMap<>(), user);
 

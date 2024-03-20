@@ -1,0 +1,122 @@
+[
+  {
+    "_id": {
+      "$oid": "65f6c33dfc13ae615750fad3"
+    },
+    "name": "Acer Aspire 7 Gaming A715-76-57CY",
+    "categoryId": {
+      "$id": "65f67612fc13ae3e4150fe89"
+    },
+    "image": "https://hanoicomputercdn.com/media/product/76816_laptop_acer_aspire_7_a715_76_53pj__nh_qgesv_007___1_.jpg",
+    "description": "Laptop Gaming nhà Acer",
+    "status": 1
+  },
+  {
+    "_id": {
+      "$oid": "65f6c33dfc13ae615750fad4"
+    },
+    "name": "ASUS Zenbook Pro 14 Duo OLED 2023",
+    "categoryId": {
+      "$id": "65f67612fc13ae3e4150fe89"
+    },
+    "image": "https://lapvip.vn/upload/products/original/asus-zenbook-pro-14-duo-oled-ux8402-2023-1684899903.jpg",
+    "description": "Laptop Gaming nhà ASUS",
+    "status": 1
+  },
+  {
+    "_id": {
+      "$oid": "65f6c33dfc13ae615750fad5"
+    },
+    "name": "ASRock CL25FF",
+    "categoryId": {
+      "$id": "65f67612fc13ae3e4150fe90"
+    },
+    "image": "https://hanoicomputercdn.com/media/product/77033_man_hinh_asrock_cl25ff_850x850_6.jpg",
+    "description": "",
+    "status": 1
+  },
+  {
+    "_id": {
+      "$oid": "65f6c33dfc13ae615750fad6"
+    },
+    "name": "ASUS ProArt PA248QV",
+    "categoryId": {
+      "$id": "65f67612fc13ae3e4150fe90"
+    },
+    "image": "https://hanoicomputercdn.com/media/product/53212_pa248qv_00.jpg",
+    "description": "",
+    "status": 1
+  },
+  {
+    "_id": {
+      "$oid": "65f6c33dfc13ae615750fad7"
+    },
+    "name": "EDRA EK300 ALPHA",
+    "categoryId": {
+      "$id": "65f67612fc13ae3e4150fe91"
+    },
+    "image": "https://hanoicomputercdn.com/media/product/77677_ban_phim_co_quang_edra_ek300_alpha.jpg",
+    "description": "",
+    "status": 1
+  },
+  {
+    "_id": {
+      "$oid": "65f6c33dfc13ae615750fad8"
+    },
+    "name": "EDRA EK368L",
+    "categoryId": {
+      "$id": "65f67612fc13ae3e4150fe91"
+    },
+    "image": "https://hanoicomputercdn.com/media/product/71051_ban_phim_co_gaming_khong_day_edra_ek368l_alpha_blue_switch_bluetooth_2_4g_0000_1.jpg",
+    "description": "",
+    "status": 1
+  },
+  {
+    "_id": {
+      "$oid": "65f6c33dfc13ae615750fad9"
+    },
+    "name": "DAREU EM911 BLACK",
+    "categoryId": {
+      "$id": "65f67612fc13ae3e4150fe92"
+    },
+    "image": "https://hanoicomputercdn.com/media/product/74817_chuot_gaming_co_day_dareu_dareu_em911_black_1.jpg",
+    "description": "",
+    "status": 1
+  },
+  {
+    "_id": {
+      "$oid": "65f6c33dfc13ae615750fada"
+    },
+    "name": "ASUS TUF M3",
+    "categoryId": {
+      "$id": "65f67612fc13ae3e4150fe92"
+    },
+    "image": "https://hanoicomputercdn.com/media/product/51521_tuf_gaming_m3_02.png",
+    "description": "",
+    "status": 1
+  },
+  {
+    "_id": {
+      "$oid": "65f6c33dfc13ae615750fadb"
+    },
+    "name": "CORSAIR 4000D AIRFLOW TG BLACK",
+    "categoryId": {
+      "$id": "65f67612fc13ae3e4150fe93"
+    },
+    "image": "https://hanoicomputercdn.com/media/product/55415_corsair_4000d_airflow_tg_black_0008_1__1_.jpg",
+    "description": "",
+    "status": 1
+  },
+  {
+    "_id": {
+      "$oid": "65f6c33dfc13ae615750fadc"
+    },
+    "name": "ASUS ROG STRIX HELIOS GX601",
+    "categoryId": {
+      "$id": "65f67612fc13ae3e4150fe93"
+    },
+    "image": "https://hanoicomputercdn.com/media/product/46922_rog_strix_helios_lighting_case_may_tinh_aura_sync_01.png",
+    "description": "",
+    "status": 1
+  }
+]

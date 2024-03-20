@@ -1,22 +1,19 @@
 package com.henry.newmongodbapi.models;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import org.bson.types.ObjectId;
-import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.mongodb.core.mapping.DocumentReference;
-import org.springframework.data.mongodb.core.mapping.FieldType;
-import org.springframework.data.mongodb.core.mapping.MongoId;
+import lombok.NoArgsConstructor;
+import org.springframework.data.mongodb.core.mapping.*;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Document(collection = "products")
 public class Product {
     @MongoId(FieldType.OBJECT_ID)
-    private ObjectId _id;
+    private String _id;
 
     private String name;
-
-    private Integer categoryId;
 
     private String image;
 
@@ -24,7 +21,6 @@ public class Product {
 
     private Short status;
 
-    @JsonIgnore
-    @DocumentReference(collection = "categories")
+    @DBRef
     private Category category;
 }

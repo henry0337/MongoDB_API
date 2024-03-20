@@ -1,10 +1,7 @@
 package com.henry.newmongodbapi.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
-import org.bson.types.ObjectId;
+import lombok.*;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.FieldType;
 import org.springframework.data.mongodb.core.mapping.MongoId;
@@ -21,7 +18,7 @@ import java.util.List;
 public class User implements UserDetails {
     @Getter
     @MongoId(FieldType.OBJECT_ID)
-    private ObjectId _id;
+    private String _id;
 
     private String username;
 
